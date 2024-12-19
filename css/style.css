@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffcccc, #ffffff);
+    text-align: center;
+    color: #333;
+}
+
+header {
+    background-color: #d92d2d;
+    color: #fff;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.main {
+    padding: 20px;
+}
+
+.santa {
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.santa img {
+    width: 300px;
+}
+
+.gift-sack {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    animation: pull 3s infinite;
+}
+
+.gift-sack img {
+    width: 100px;
+}
+
+@keyframes pull {
+    0%, 100% { left: 80%; }
+    50% { left: 85%; }
+}
+
+.wishes {
+    margin: 20px auto;
+    font-size: 1.2rem;
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.thank-you-form {
+    margin-top: 20px;
+}
+
+.thank-you-form input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border: 2px solid #d92d2d;
+    border-radius: 5px;
+}
+
+.thank-you-form button {
+    padding: 10px 20px;
+    background-color: #d92d2d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.thank-you-form button:hover {
+    background-color: #b02020;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    .santa img {
+        width: 200px;
+    }
+
+    .gift-sack img {
+        width: 70px;
+    }
+
+    .wishes {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .thank-you-form input[type="text"] {
+        width: 90%;
+    }
+}
